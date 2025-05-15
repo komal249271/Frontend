@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>contact me</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .login-container input:focus {
+      border-color: #7b6cf6;
+      outline: none;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #7b6cf6;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .login-container button:hover {
+      background-color: #5a4cd4;
+    }
+
+    @media (max-width: 500px) {
+      .login-container {
+        padding: 20px;
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Contact me</h2>
+    <form action="http://localhost:10000/login" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="your Email" required />
+
+      <input type="text" name="message" placeholder="message" required />
+      
+      <button type="submit">Contact me</button>
+    </form>
+  </div>
+
+</body>
+</html>
